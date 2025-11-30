@@ -1,0 +1,76 @@
+body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif; 
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #2c3e50; 
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 20px 25px;
+            text-decoration: none;
+            color: #ecf0f1; 
+            font-size: 1.1em;
+            transition: background-color 0.3s ease; 
+        }
+
+        .sidebar a:hover {
+            background-color: #34495e; 
+        }
+
+        .main-content {
+            flex: 1; 
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero-section {
+            height: 60vh; 
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_J_pjRMcoWwTE5FNl22r4sF_sTlO2Q8-m7Q&s') no-repeat center center/cover;
+            
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                              url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_J_pjRMcoWwTE5FNl22r4sF_sTlO2Q8-m7Q&s');
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            color: white;
+            font-size: 2.5em; 
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+        }
+
+        .content-text {
+            padding: 40px;
+            line-height: 1.7; 
+            font-size: 1.1em;
+            color: #333;
+            flex-grow: 1; 
+            background-image: linear-gradient(brown,#ff5e00);
+        }
+
+        .content-text p {
+            margin-bottom: 20px; 
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #2c3e50; 
+            color: #ecf0f1;
+            font-weight: 300;
+        }
